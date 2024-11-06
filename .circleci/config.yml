@@ -28,9 +28,8 @@ jobs:
       - run:
           name: Deploy to Railway App
           command: |
-            cd bankchurn-api 
-            npm i -g @railway/cli
-            railway link -p fbae1c35-c558-44b0-9828-b5cecd2a1a87
+            cd bankchurn-api
+            railway up --service=discerning-happiness -d
             railway up --detach
 
 
